@@ -40,3 +40,28 @@ def automatic_email():
 
 
 automatic_email()
+
+
+"""
+import smtplib
+from email.message import EmailMessage
+
+msg = EmailMessage()
+msg["From"] = sender_email
+msg["To"] = receiver_email
+msg["Subject"] = "Test Email with Attachment"
+msg.set_content("Please find the attached file.")
+
+# Attach a file
+with open("sample.pdf", "rb") as f:
+    msg.add_attachment(f.read(), maintype="application", subtype="pdf", filename="sample.pdf")
+
+# Send the email
+with smtplib.SMTP("smtp.gmail.com", 587) as server:
+    server.starttls()
+    server.login(sender_email, password)
+    server.send_message(msg)
+
+print("Email sent with attachment!")
+
+"""
