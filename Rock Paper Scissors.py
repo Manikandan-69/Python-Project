@@ -1,10 +1,10 @@
 import random
 
-def game_starts():
+def game_starts(attempt):
     Player1_Score=0
     Player2_Score=0
     n=1
-    while n<=3:
+    while n<=attempt:
         Player1=input("Select Rock, Paper, or Scissor :").title()
         Player2=random.choice(['Rock','Paper','Scissor']).title()
         print("Player 2 selected: ",Player2)
@@ -21,6 +21,5 @@ def game_starts():
             n=n+1
     return (f"Player1 Score: {Player1_Score} , Player2 Score: {Player2_Score}")
 
-RPS=game_starts()
+RPS=game_starts(1) # pass how many number of games you need to play Eg. 3,5,7
 print(RPS)
-    
