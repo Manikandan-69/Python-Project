@@ -7,6 +7,6 @@ def missing_numbers(n):
             output.append(i)
     return output
 
-a=[1,4,15,5,6,7,8,8,8,10]
+a=[1,3,5,7,9,8,6,4,15]
 op=missing_numbers(a)
 print(op)

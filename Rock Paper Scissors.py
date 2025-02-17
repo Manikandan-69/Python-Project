@@ -21,5 +21,5 @@ def game_starts(attempt):
             n=n+1
     return (f"Player1 Score: {Player1_Score} , Player2 Score: {Player2_Score}")
 
-RPS=game_starts(1) # pass how many number of games you need to play Eg. 3,5,7
+RPS=game_starts(5) # pass how many number of games you need to play Eg. 3,5,7
 print(RPS)

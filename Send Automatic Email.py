@@ -18,10 +18,10 @@ def automatic_email():
     user=input('Enter User Name: ')
     email=input('Enter Your Email: ')
 
-    sender_mail = ''  #your email
-    sender_password ='' #Use an app password for security
+    sender_mail = ''  # Enter your mailID
+    sender_password ='' #enter app password
 
-    subject= " "  # Email subject
+    subject= "Welcome Buddyyy"  # Email subject
     body=f"Dear {user},\n\n Welcome to the world of IT \n \n\Regards,\n Team Data Science "
     message= (f"Subject: {subject} \n\n {body}")
     
